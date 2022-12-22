@@ -51,6 +51,7 @@ digraph G {
   "@kie-tools/dashbuilder-component-dev" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/dashbuilder-component-echarts-base" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools-core/patternfly-base" [ color = "purple", fontcolor = "purple", style = "rounded" ];
+  "@kie-tools/dashbuilder-component-swf-editor" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie-tools/dashbuilder-editor" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/dashbuilder-images" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie-tools/dashbuilder-swf-monitoring-dashboard" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
@@ -183,6 +184,8 @@ digraph G {
   "@kie-tools/dashbuilder-component-svg-heatmap" -> "@kie-tools-core/patternfly-base" [ style = "solid", color = "black" ];
   "@kie-tools/dashbuilder-component-svg-heatmap" -> "@kie-tools-core/webpack-base" [ style = "dashed", color = "black" ];
   "@kie-tools/dashbuilder-component-svg-heatmap" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];
+  "@kie-tools/dashbuilder-component-swf-editor" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];
+  "@kie-tools/dashbuilder-component-swf-editor" -> "@kie-tools/serverless-workflow-standalone-editor" [ style = "solid", color = "black" ];
   "@kie-tools/dashbuilder-component-table" -> "@kie-tools-core/patternfly-base" [ style = "solid", color = "black" ];
   "@kie-tools/dashbuilder-component-table" -> "@kie-tools-core/webpack-base" [ style = "dashed", color = "black" ];
   "@kie-tools/dashbuilder-component-table" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];
