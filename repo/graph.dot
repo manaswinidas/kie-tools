@@ -184,8 +184,8 @@ digraph G {
   "@kie-tools/dashbuilder-component-svg-heatmap" -> "@kie-tools-core/patternfly-base" [ style = "solid", color = "black" ];
   "@kie-tools/dashbuilder-component-svg-heatmap" -> "@kie-tools-core/webpack-base" [ style = "dashed", color = "black" ];
   "@kie-tools/dashbuilder-component-svg-heatmap" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];
-  "@kie-tools/dashbuilder-component-swf-editor" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];
   "@kie-tools/dashbuilder-component-swf-editor" -> "@kie-tools/serverless-workflow-standalone-editor" [ style = "solid", color = "black" ];
+  "@kie-tools/dashbuilder-component-swf-editor" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];
   "@kie-tools/dashbuilder-component-table" -> "@kie-tools-core/patternfly-base" [ style = "solid", color = "black" ];
   "@kie-tools/dashbuilder-component-table" -> "@kie-tools-core/webpack-base" [ style = "dashed", color = "black" ];
   "@kie-tools/dashbuilder-component-table" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];

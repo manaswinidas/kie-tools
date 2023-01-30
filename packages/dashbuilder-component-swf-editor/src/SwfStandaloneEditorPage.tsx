@@ -16,7 +16,6 @@
 
 import * as React from "react";
 import { useEffect, useRef } from "react";
-import { Page } from "@patternfly/react-core";
 import * as SwfEditor from "@kie-tools/serverless-workflow-standalone-editor/dist/swf";
 
 export interface SwfEditorProps {
@@ -33,18 +32,15 @@ export interface SwfEditorProps {
 export function SwfStandaloneEditorPage(props: SwfEditorProps) {
   const swfEditorContainer = useRef<HTMLDivElement>(null);
 
+  // TODO: Guess if content is JSON or YAML and set language type accordingly
   useEffect(() => {
     const editor = SwfEditor.open({
       container: swfEditorContainer.current!,
       initialContent: Promise.resolve(""),
       readOnly: true,
+      languageType: "yaml",
     });
   }, []);
 
-  return (
-    <Page>
-      <div style={{ height: "40px", padding: "5px" }}></div>
-      <div ref={swfEditorContainer} style={{ height: "calc(100% - 50px)" }} />
-    </Page>
-  );
+  return <div ref={swfEditorContainer} style={{ height: "calc(100% - 50px)" }} />;
 }

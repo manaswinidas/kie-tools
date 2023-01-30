@@ -476,12 +476,12 @@
       },
       {
         "source": "@kie-tools/dashbuilder-component-swf-editor",
-        "target": "@kie-tools/dashbuilder-component-dev",
+        "target": "@kie-tools/serverless-workflow-standalone-editor",
         "weight": 1
       },
       {
         "source": "@kie-tools/dashbuilder-component-swf-editor",
-        "target": "@kie-tools/serverless-workflow-standalone-editor",
+        "target": "@kie-tools/dashbuilder-component-dev",
         "weight": 1
       },
       { "source": "@kie-tools/dashbuilder-editor", "target": "@kie-tools-core/editor", "weight": 1 },

@@ -34,20 +34,6 @@ module.exports = async (env) => {
 
     module: {
       rules: [...patternflyBase.webpackModuleRules],
-      loaders: [
-        {
-          test: /\.jsx?$/,
-          loader: "babel-loader",
-          include: path.join(__dirname, "app"),
-        },
-        {
-          test: /\.css$/,
-          loader: "style-loader!css-loader",
-        },
-      ],
-      resolve: {
-        extensions: [".js", ".jsx", ".css"],
-      },
     },
     devServer: {
       historyApiFallback: false,

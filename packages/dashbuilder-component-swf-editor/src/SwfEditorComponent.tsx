@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
 
 import { SwfStandaloneEditorPage } from "./SwfStandaloneEditorPage";
 import { ComponentController } from "@kie-tools/dashbuilder-component-api";
-
+// TODO: Set the parameter as "content" and make it support YAML and JSON
 const YAML_PARAM = "yaml";
 
 const MISSING_PARAM_MSG = "You must provide either a YAML URL or the YAML Content using the parameter 'yaml'.";
@@ -79,7 +79,7 @@ export function SwfEditorComponent(props: Props) {
     }
   };
 
-  useEffect(() => props.controller.setOnParams(onParams), [appState.yamlContent]);
+  useEffect(() => props.controller.setOnInit(onParams), [appState.yamlContent]);
 
   return <>{<SwfStandaloneEditorPage {...appState} />};</>;
 }
